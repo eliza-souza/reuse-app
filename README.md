@@ -38,22 +38,25 @@ The application allows users to create an account, log in, view fashion posts, u
 
 ```bash
 git clone https://github.com/eliza-souza/reuse-app.git
+```
 
 ### 2. Open the project folder
 
 ```bash
 cd reuse-app
+```
 
 ### 3. Install dependencies
 
 ```bash
 npm install
+```
 
 ### 4. Run the project
 
 ```bash
 npm run dev
-
+```
 ### 5. Open the application
 
 After running the project, open the local URL shown in the terminal.
@@ -78,7 +81,7 @@ The project uses:
 
 ```bash
 npm run dev
-
+```
 ### 2. Create a new account using the sign-up page.
 ### 3. Log in with the created account.
 ### 4. Navigate through the application pages.
