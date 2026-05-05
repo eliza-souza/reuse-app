@@ -1,0 +1,13 @@
+/* RESET TOTAL DO VITE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GARANTE FUNDO BRANCO */
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: Arial, sans-serif;
+}
