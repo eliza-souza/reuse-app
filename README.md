@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+# ReUse App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReUse is a second-hand fashion marketplace web application developed as a final year project.
 
-Currently, two official plugins are available:
+The application allows users to create an account, log in, view fashion posts, upload second-hand items, like posts and interact with other users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- Firebase Authentication
+- Firestore Database
+- Firebase Storage
+- CSS
+- GitHub
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Main Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- User registration
+- User login
+- Feed with second-hand fashion posts
+- Add new post with image upload
+- Like posts
+- User profile information
+- Chat/message feature
+- Firebase database integration
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project Setup
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1. Clone the repository
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+git clone https://github.com/eliza-souza/reuse-app.git
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 2. Open the project folder
+
+```bash
+cd reuse-app
+
+### 3. Install dependencies
+
+```bash
+npm install
+
+### 4. Run the project
+
+```bash
+npm run dev
+
+### 5. Open the application
+
+After running the project, open the local URL shown in the terminal.
+
+Usually: http://localhost:5173
+
+Firebase Configuration
+
+Firebase configuration is already included in the project for academic assessment purposes.
+
+The project uses:
+
+Firebase Authentication for user login and registration
+Firestore Database for storing posts, users, likes and messages
+Firebase Storage for storing uploaded images
+How to Test the App
+### 1. Run the project using:
+```bash
+npm run dev
+
+### 2. Create a new account using the sign-up page.
+### 3. Log in with the created account.
+### 4. Navigate through the application pages.
+### 5. Create a post by uploading an image and adding item details.
+### 6. Check if the post appears in the feed.
+### 7. Test likes and interactions.
+### 8. Test the chat/message feature if available.
+
+Folder Structure
+reuse-app
+│
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── firebase
+│   │   └── config.ts
+│   ├── pages
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.ts
+
+Important Notes
+The application was developed using React and TypeScript.
+Firebase is used as the backend service.
+The project should be run locally using npm install and npm run dev.
+The Firebase configuration is included directly in the project to make the assessment process easier.
+No additional environment file is required to run the app.
+
+Author
+
+Developed by Eliza Souza as a final year Computer Science project.
