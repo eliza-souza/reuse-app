@@ -58,19 +58,24 @@ npm run dev
 
 After running the project, open the local URL shown in the terminal.
 
-Usually: http://localhost:5173
+Usually:
 
-Firebase Configuration
+http://localhost:5173
+
+## Firebase Configuration
 
 Firebase configuration is already included in the project for academic assessment purposes.
 
 The project uses:
 
-Firebase Authentication for user login and registration
-Firestore Database for storing posts, users, likes and messages
-Firebase Storage for storing uploaded images
-How to Test the App
+- Firebase Authentication for user login and registration
+- Firestore Database for storing posts, users, likes and messages
+- Firebase Storage for storing uploaded images
+
+## How to Test the App
+
 ### 1. Run the project using:
+
 ```bash
 npm run dev
 
@@ -82,31 +87,18 @@ npm run dev
 ### 7. Test likes and interactions.
 ### 8. Test the chat/message feature if available.
 
-Folder Structure
-reuse-app
-│
-├── public
-├── src
-│   ├── assets
-│   ├── components
-│   ├── firebase
-│   │   └── config.ts
-│   ├── pages
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── package.json
-├── package-lock.json
-├── README.md
-└── vite.config.ts
+## Important Notes
 
-Important Notes
-The application was developed using React and TypeScript.
-Firebase is used as the backend service.
-The project should be run locally using npm install and npm run dev.
-The Firebase configuration is included directly in the project to make the assessment process easier.
-No additional environment file is required to run the app.
+- The application was developed using React and TypeScript.
+- Firebase is used as the backend service.
+- The project should be run locally using `npm install` and `npm run dev`.
+- The Firebase configuration is included directly in the project to make the assessment process easier.
+- No additional environment file is required to run the app.
 
-Author
+---
 
-Developed by Eliza Souza as a final year Computer Science project.
+## Author
+
+Eliza Souza  
+Final Year Computer Science Student  
+Dublin Business School
